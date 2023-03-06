@@ -1,0 +1,53 @@
+/*CABEÇALHO*/
+
+.cabecalho__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.cabecalho__pesquisar__item {
+  display: none;
+}
+
+/* RODAPÉ */
+
+.rodape__container {
+  display: flex;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  flex-flow: column wrap;
+}
+/* SEÇÃO SUPERIOR*/
+.superior__secao__container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  /*white-space é usada para descrever como os espaços em branco dentro dos elementos são manipulados.*/
+  /*nowrap: Recolhe os espaços em branco como no normal, mas suprime as quebras de linha (quebra de texto) no texto.*/
+  overflow: scroll; /*aplicar barra de rolagem*/
+  gap: 15px;
+}
+
+/* .superior__item {      SUBSTITUÍDOS POR GAP
+  margin-right: 15px;
+}
+
+.superior__item:last-child {
+  margin-right: 0;
+} */
+
+@media (min-width: 834px) {
+  /* CABEÇALHO */
+
+  .cabecalho__pesquisar__item {
+    display: block;
+  }
+  /* RODAPÉ */
+
+  .rodape__container {
+    justify-content: space-between;
+  }
+}
