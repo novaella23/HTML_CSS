@@ -15,7 +15,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: black;
+  background: blue;
 }
 .header_container {
   /* background: pink; */
@@ -23,7 +23,6 @@ header {
   justify-content: flex-end;
   gap: 32px;
   padding: 20px;
-  height: 50px;
 }
 
 .nav_item {
@@ -47,11 +46,10 @@ header {
 }
 .descricao {
   background: blue;
-  padding: 20px;
 }
 .container_foto {
   display: flex;
-  /* background: yellow; */
+  background: yellow;
   justify-content: center;
   align-items: center;
 }
@@ -75,7 +73,7 @@ footer {
   width: 100%;
   bottom: 0vh;
   left: 0;
-  background: black;
+  background: white;
   text-align: center;
-  padding: 50px 0;
+  padding: 20px 0;
 }
