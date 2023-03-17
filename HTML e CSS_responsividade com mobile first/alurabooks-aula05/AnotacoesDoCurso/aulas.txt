@@ -1,0 +1,7 @@
+uma interação com o clique do usuário apenas com HTML e CSS para abrir o menu hambúrguer. Para isso, foi utilizado um elemento input do tipo checkbox (que constrói uma caixa quadrada que são marcadas através do clique) com auxílio do elemento <label>. Pensando no que você acabou de construir, imagine que você quer construir um botão de curtida:
+<input type="checkbox" id="like" class="container__botao">
+<label for="like">
+  <img src="https://imgur.com/6nT3eyN.png" alt="Coração">
+</label>
+Alternativa correta! Isso ai! Ao usar o atributo for, com o valor igual ao id do input, você está associando a label com o input. Dessa maneira, ao clicar na imagem que está dentro dessa label, irá interagir com o checkbox, fazendo essa detecção do clique do usuário.
+
