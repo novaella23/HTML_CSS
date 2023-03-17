@@ -1,0 +1,138 @@
+/* www-internetingishard-com */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+/*The box-sizing property allows us to include the padding and border 
+in an element's total width and height.*/
+/*If you set box-sizing: border-box; on an element, padding and border 
+are included in the width and heigh*/
+}
+.menu-container {
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;/*ALINHAMENTO HORIZONTAL DOS ITENS*/
+}
+
+.signup {
+  margin-left: auto;
+}
+/*Podemos replicar o layout desejado colocando 
+uma margem automática entre os itens que queremos separar*/
+/*As margens automáticas consomem todo o espaço extra 
+em um contêiner flexível, portanto, em vez de distribuir 
+os itens igualmente, isso move o .signupe quaisquer itens seguintes 
+( .login) para o lado direito do contêiner. Isso fornecerá exatamente 
+o mesmo layout que tínhamos antes, mas sem aquele extra aninhado
+ <div>para agrupá-los. Às vezes, é bom manter seu HTML mais plano.*/
+
+.menu {
+  /*border: 1px solid #fff;   */
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  /*border: 1px solid #fff;   For debugging */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*align-items: stretch;*/
+  /*O alinhamento vertical é definido adicionando uma 
+  align-items a um contêiner flexível. */
+}
+
+/* .social,
+.logo,
+.subscribe {
+  border: 1px solid #5995DA;
+} */
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+/* .first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+} */
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1;
+  /*flex: 1;linha diz aos itens para esticar para corresponder 
+  à largura de .footer. Como todos têm o mesmo peso, eles se esticarão igualmente*/
+}
+
+.footer-three {
+  flex: 2;
+}
+
+.footer-one,
+.footer-three {
+ background-color: #5995DA;
+ flex: initial;/*sem flex:initial, herdaria flex:1 da footer-item*/
+ width: 300px;/*sem flex:initial width seria ignorado*/
+
+/*Sem essa linha flex: initial, declaração flex: 1 seria herdada da 
+regra .footer-item, fazendo com que as propriedades width fossem ignoradas. 
+initialcorrige isso e obtemos um layout flexível que também contém itens 
+de largura fixa. Ao redimensionar a janela do navegador, você verá que 
+apenas a caixa do meio no rodapé é redimensionada.*/
+
+
+
+}
